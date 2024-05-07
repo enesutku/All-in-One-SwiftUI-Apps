@@ -12,9 +12,9 @@ struct SpotifyHomeView: View {
             Color.spotifyBlack.ignoresSafeArea()
             
             ScrollView(.vertical) {
-                LazyVStack(spacing: 1, pinnedViews: [.sectionHeaders], content: {
+                LazyVStack(spacing: 2, pinnedViews: [.sectionHeaders], content: {
                     Section {
-                        ForEach(0..<20) { _ in
+                        ForEach(0..<10) { _ in
                         Rectangle()
                                 .frame(width: 200, height: 200)
                                 .foregroundStyle(.white)
@@ -23,7 +23,7 @@ struct SpotifyHomeView: View {
                         header
                     }
                 })
-                .padding(.top, 8)
+                .padding(.top, 6)
             }
             .scrollIndicators(.hidden)
             .clipped()

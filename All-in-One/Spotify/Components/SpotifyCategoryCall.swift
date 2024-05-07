@@ -10,7 +10,7 @@ struct SpotifyCategoryCall: View {
     var body: some View {
         Text(title)
             .font(.callout)
-            .frame(minWidth: 35)
+            .frame(minWidth: 40)
             .padding(.vertical, 8)
             .padding(.horizontal, 10)
             .background(isSelected ? .spotifyGreen : .spotifyDarkGray)
